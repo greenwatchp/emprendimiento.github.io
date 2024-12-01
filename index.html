@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>GreenWatch</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+  <style>
+    @font-face {
+      font-family: 'HopsAndBarley';
+      src: url('HopsAndBarley.woff2') format('woff2'), /* Formato optimizado */
+           url('HopsAndBarley.woff') format('woff');  /* Respaldo */
+      font-display: swap; /* Permite usar fuentes del sistema mientras carga */
+    }
+    
+
+    .titulo-bienvenida {
+      font-family: 'HopsAndBarley', sans-serif;
+      color: black;
+    }
+
+    .titulo-navidad {
+      color: #4CC3A8; /* Paleta de colores PRINCIPAL */
+    }
+
+    .animacion-greenwatch {
+      animation: cambio-color-greenwatch 2s infinite;
+    }
+
+    @keyframes cambio-color-greenwatch {
+      0% {
+        color: #4CC3A8;
+      }
+      50% {
+        color: #2A9278;
+      }
+      100% {
+        color: #4CC3A8;
+      }
+    }
+
+    /* Animaciones y estilos modernos */
+    .reciclaje-animado {
+      position: relative;
+      display: inline-block;
+      font-size: 1.5em;
+      color: #4CC3A8;
+    }
+
+    .plantas-animadas {
+      display: inline-block;
+      margin-top: 20px;
+      animation: wave-planta 2s infinite;
+    }
+
+    @keyframes wave-planta {
+      0% {
+        transform: rotate(0deg);
+      }
+      25% {
+        transform: rotate(5deg);
+      }
+      50% {
+        transform: rotate(0deg);
+      }
+      75% {
+        transform: rotate(-5deg);
+      }
+      100% {
+        transform: rotate(0deg);
+      }
+    }
+
+    .planta-icono {
+      display: inline-block;
+      font-size: 2em;
+      color: #4CC3A8;
+      animation: bounce-planta 2s infinite;
+    }
+
+    @keyframes bounce-planta {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+
+    .decoracion-planta {
+      font-size: 1.5em;
+      color: #4CC3A8;
+      margin-left: 10px;
+      animation: float-planta 3s ease-in-out infinite;
+    }
+
+    @keyframes float-planta {
+      0% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+  </style>
+  <head>
+    <!-- Agregar Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  </head>
+<body>
+  <div id="decoraciones">
+    <div class="bola bola1"></div>
+    <div class="bola bola2"></div>
+    <div class="bola bola3"></div>
+    <div class="bola bola4"></div>
+    <div class="bola bola5"></div>
+    <!-- Nuevas bolas para las partes inferiores -->
+    <div class="bola bola6"></div>
+    <div class="bola bola7"></div>
+  </div>
+
+  <header id="main-header">
+    <div class="logo">
+      <img src="gw.png" alt="Logo" class="logo-img">
+    </div>
+  <nav class="menu">
+    <ul>
+      <li><a href="#inicio">INICIO</a></li>
+      <li><a href="donaciones.html">DONACIONES</a></li>
+    </ul>
+  </nav>
+</header>
+  
+  
+  
+  <section id="inicio" class="hero">
+    <div class="hero-content">
+      <div class="decoracion decoracion1"></div>
+      <div class="decoracion decoracion2"></div>
+      <div class="decoracion decoracion3"></div>
+  
+      <!-- Contenedor para el texto y la imagen -->
+      <div class="bienvenida-container">
+        <div class="texto-bienvenida">
+          <h1 class="titulo-bienvenida" style="font-family: 'HopsAndBarley', sans-serif; color: black;">
+            Bienvenido a <span style="color: #4CC3A8;">Green Watch</span>
+          </h1>
+          <p class="subtitulo">Tu Acción, Nuestra Vida</p>
+        </div>
+        <div class="imagen-bienvenida">
+          <img src="esoo.png" alt="Imagen de bienvenida" class="imagen-bienvenida">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="ofrecemos" class="ofrecemos">
+    <h2>NUESTROS OBJETIVOS</h2>
+    <p>Elige entre nuestras iniciativas para promover el reciclaje y cuidar el medio ambiente</p>
+    <div class="ofrecemos-contenedor">
+      <div class="ofrecemos-item">
+        <img src="recycle-bin.jpg" alt="Reciclaje Tangible" class="ofrecemos-img">
+        <h3>Reciclaje Tangible</h3>
+        <p>GreenWatch convierte el reciclaje en una acción tangible, recompensando a los clientes con macetas ecológicas.</p>
+      </div>
+      <div class="ofrecemos-item">
+        <img src="tree-planting.png" alt="Plaza: Donde GreenWatch Vive y Crece" class="ofrecemos-img">
+        <h3>Plaza: Donde GreenWatch Vive y Crece</h3>
+        <p>Ubicación estratégica de puntos de recolección y estrategias de expansión como instalación de contenedores.</p>
+      </div>
+      <div class="ofrecemos-item">
+        <img src="education.png" alt="Compromiso Social y Alianzas" class="ofrecemos-img">
+        <h3>Compromiso Social y Alianzas</h3>
+        <p>Colaboración con empresas y organizaciones para fomentar la sostenibilidad y la educación ambiental.</p>
+      </div>
+    </div>
+  </section>
+  
+  
+
+  <!-- Decoraciones bolas -->
+  <div class="decoraciones">
+    <div class="bola bola1"></div>
+    <div class="bola bola2"></div>
+    <div class="bola bola3"></div>
+  
+  
+
+  <section id="descripcion" class="descripcion">
+    <div class="descripcion-container">
+      <div class="descripcion-texto-imagen">
+        <div class="descripcion-imagen">
+          <img src="image222.png" alt="Vaso GreenWatch" class="imagen-descripcion-v2">
+        </div>
+        <div class="descripcion-texto">
+          <div class="marco-blur">
+          <p>GreenWatch es una empresa ecológica que promueve el reciclaje y la sostenibilidad, intercambiando plástico recolectado por macetas con plantas. Con el lema "Tu Acción, Nuestra Vida", incentivamos pequeñas acciones para lograr un impacto positivo en el medio ambiente.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Sección de inicio con elementos navideños -->
+  <section id="acerca" class="hero">
+    <div class="hero-content">
+      <h1 class="titulo-greenwatch">ACERCA DE GREENWATCH</h1>
+    <div class="marco-blur">
+      <p>
+        GreenWatch es una iniciativa ecológica que fomenta la sostenibilidad a través del reciclaje, ofreciendo macetas con plantas a cambio de plástico recolectado. Con el eslogan "Tu Acción, Nuestra Vida", buscamos motivar pequeñas acciones que generen un impacto positivo en el medio ambiente.
+    </div>
+  </section>
+  
+  <script src="script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,890 @@
+/** ESTILOS DISEÑOO */
+body {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6;
+  background-color: #f7f7f7;
+  color: #333;
+
+}
+
+header {
+  display: flex;
+  justify-content: space-between; /* Ajusta los elementos a ambos lados */
+  align-items: center; /* Centra verticalmente los elementos */
+  padding: 10px 20px; /* Espaciado alrededor */
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background: white;
+  z-index: 1000;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: center; /* Centra los elementos horizontalmente */
+  list-style: none; /* Elimina los puntos de lista */
+  padding: 0; /* Elimina el relleno predeterminado */
+  margin: 0; /* Elimina el margen predeterminado */
+}
+
+
+
+header nav ul li a {
+  text-decoration: none;
+  color: #141414;
+  transition: color 0.4s ease-in-out;
+}
+
+header nav ul li a:hover {
+  color: #ffcc80;
+}
+
+.hero {
+  background-image: url('tu-imagen-de-fondo.jpg'); /* FALLO AL AGREGAR*/
+  background-size: cover;
+  background-position: center;
+  color: #161616;
+  text-align: center;
+  padding: 200px 0;
+}
+
+.hero h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2em;
+}
+
+.productos {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.productos-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.producto {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  flex: 0 0 calc(33.333% - 20px);
+  margin-bottom: 40px;
+}
+
+.producto:hover {
+  transform: scale(1.05);
+}
+
+.imagen-producto {
+  max-width: 300px; /* Cambia a un tamaño adecuado */
+  width: 100%; /* Hace que sea responsiva */
+  height: auto; /* Mantiene la proporción de la imagen */
+  display: block;
+  margin: 0 auto; /* Centra la imagen */
+}
+
+
+.imagen-producto:hover {
+  transform: scale(1);
+}
+
+.descripcion-producto {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 1.1em;
+}
+
+.contacto {
+  background-color: #f90;
+  color: #fff;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.contacto form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.hero-content,
+.productos-container,
+.formulario {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.hero-content,
+.productos-container,
+.formulario {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.descripcion-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.descripcion-texto-imagen {
+  display: flex;
+  align-items: center;
+}
+
+.descripcion-imagen {
+  flex: 0 0 50%;
+  padding: 0 20px;
+}
+
+.imagen-descripcion {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  
+}
+
+.descripcion-texto {
+  flex: 0 0 50%;
+  padding: 0 20px;
+  
+}
+
+.descripcion-texto h2 {
+  font-family: '', cursive !important; /* Cambia a la fuente usada */
+  font-size: 3em !important; /* Ajusta el tamaño */
+  color: #4CC3A8 !important; /* Aplica el color */
+}
+
+
+
+#inicio .hero-content h1,
+#contacto h2 {
+  color: #752424;
+  font-family: 'Lobster', cursive;
+}
+
+@keyframes cambio-color-greenwatch {
+  0% {
+    color: #4CC3A8;
+  }
+  50% {
+    color: #2A9278;
+  }
+  100% {
+    color: #4CC3A8;
+  }
+}
+
+.gorro {
+  width: 40px;
+  position: absolute;
+  top: -10px; /* Ajustado para acomodar mejor el gorro */
+  left: 50%; /* Centrando horizontalmente */
+  transform: translateX(-50%);
+}
+
+.precio {
+  bottom: 0;
+  color: red;
+}
+
+.valor-tachado {
+  text-decoration: line-through;
+}
+
+.valor-normal {
+}
+
+h1 span.efecto-navideño {
+  color: #4CC3A8;
+  font-family: 'Lobster', cursive;
+  display: inline-block;
+  position: relative;
+  animation: cambio-color-greenwatch 2s infinite;
+}
+
+.hero-content {
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.texto-bienvenida {
+  text-align: center;
+}
+
+
+.subtitulo {
+  font-size: 1.2em; /* Ajusta el tamaño de la frase si es necesario */
+  color: #333;
+}
+
+.imagen-bienvenida {
+  max-width: 400px;
+  height: auto;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2), 0px 6px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  border-radius: 10px; /* Agrega esquinas redondeadas */
+}
+
+.imagen-bienvenida {
+  max-width: 400px;
+  height: auto;
+  padding: 5px; /* Espacio para mostrar el borde */
+  border-radius: 15px;
+  background: linear-gradient(135deg, #4CC3A8, #2A9278); /* Degradado de color */
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.imagen-bienvenida img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.hero-content .titulo-bienvenida {
+  font-size: 4em !important; /* El "important" forzará el cambio */
+  font-weight: bold;
+  color: black;
+}
+
+/* Estilo de los elementos decorativos */
+.decoracion {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: linear-gradient(135deg, #4CC3A8, #2A9278);
+  border-radius: 50%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  animation: float 4s ease-in-out infinite, color-change 6s ease-in-out infinite, blink 2s ease-in-out infinite;
+}
+
+/* Variaciones de posición, tamaño y opacidad */
+.decoracion1 {
+  top: 10%;
+  left: 15%;
+  width: 20px;
+  height: 20px;
+  opacity: 0.8;
+  animation-delay: 0s;
+}
+
+.decoracion2 {
+  top: 50%;
+  left: 5%;
+  width: 25px;
+  height: 25px;
+  opacity: 0.6;
+  animation-delay: 1s;
+}
+
+.decoracion3 {
+  top: 30%;
+  right: 10%;
+  width: 15px;
+  height: 15px;
+  opacity: 0.9;
+  animation-delay: 2s;
+}
+
+/* Animaciones */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(180deg);
+  }
+}
+
+@keyframes color-change {
+  0% {
+    background: linear-gradient(135deg, #4CC3A8, #2A9278);
+  }
+  50% {
+    background: linear-gradient(135deg, #6FC1C0, #4CC3A8);
+  }
+  100% {
+    background: linear-gradient(135deg, #4CC3A8, #2A9278);
+  }
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 0.9;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.marco-blur {
+  background: rgba(255, 255, 255, 0.8); /* Fondo blanco con opacidad */
+  backdrop-filter: blur(10px); /* Efecto de desenfoque */
+  padding: 20px; /* Espaciado interno */
+  border-radius: 15px; /* Bordes redondeados */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para el marco */
+  margin: 20px auto; /* Centra el marco y añade margen */
+  max-width: 800px; /* Limita el ancho máximo */
+  text-align: center; /* Centra el texto */
+}
+
+/* Estilo para el encabezado */
+#main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: space-between;
+  padding: 0px 20px;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Asegúrate de que el logo esté alineado a la izquierda */
+.logo {
+  flex: 0 0 auto; /* Evita que se estire */
+}
+
+.logo-img {
+  width: 40px;
+  height: auto;
+  margin-right: 10px;
+  justify-content: space-between;
+}
+
+.logo-text {
+  font-family: 'Open Sans', sans-serif;
+  justify-content: space-between;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #333;
+}
+
+
+/* Centrar el menú */
+.menu {
+  flex: 1; /* Permite que el menú ocupe el espacio restante */
+  display: flex;
+  justify-content: center; /* Centra los elementos del menú */
+}
+
+/* Estilos para los elementos del menú */
+.menu ul {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.menu ul li {
+  margin: 0 15px; /* Espaciado entre las categorías */
+}
+
+.menu ul li a {
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+
+.menu ul li a:hover {
+  color: #4CC3A8; /* Cambia el color al pasar el mouse */
+}
+
+
+
+/* Botones del encabezado */
+.buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.account-btn, .register-btn {
+  font-family: 'Open Sans', sans-serif;
+  padding: 10px 15px;
+  border-radius: 20px;
+  font-weight: bold;
+  border: 2px solid #4CC3A8;
+  background: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.account-btn {
+  color: #4CC3A8;
+}
+
+.register-btn {
+  color: white;
+  background: #4CC3A8;
+}
+
+.account-btn:hover {
+  background: #4CC3A8;
+  color: white;
+}
+
+.register-btn:hover {
+  background: #2A9278;
+}
+
+/* Ocultar encabezado al desplazarse */
+.hidden-header {
+  transform: translateY(-100%);
+}
+.logo-img {
+  width: 100px; /* Ajusta el ancho (más grande) */
+  height: auto; /* Mantiene la proporción */
+}
+/* Efecto de hover dinámico */
+.menu ul li a {
+  position: relative;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.menu ul li a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -3px; /* Ubicación del subrayado */
+  width: 0;
+  height: 2px; /* Grosor del subrayado */
+  background-color: #4CC3A8;
+  transition: width 0.3s ease;
+}
+
+.menu ul li a:hover::after {
+  width: 100%; /* El subrayado se extiende completamente */
+}
+
+.menu ul li a:hover {
+  color: #4CC3A8; /* Cambia el color del texto al pasar el mouse */
+}
+
+.titulo-greenwatch {
+  font-family: 'HopsAndBarley', sans-serif; /* O la fuente usada para "GreenWatch" */
+  color: #4CC3A8; /* Color verde */
+  text-align: center; /* Opcional, si quieres centrar el texto */
+  margin: 20px 0; /* Espaciado superior e inferior */
+  font-size: 2.5em; /* Ajusta el tamaño según prefieras */
+}
+
+/* Alineación de la imagen y el texto */
+.bienvenida-container {
+  display: flex;
+  justify-content: space-between; /* Alinea el texto a la izquierda y la imagen a la derecha */
+  align-items: center; /* Centra verticalmente los elementos */
+  text-align: left; /* Alinea el texto a la izquierda */
+}
+
+.texto-bienvenida {
+  flex: 1; /* El texto ocupa la mitad del espacio */
+  padding-right: 20px; /* Espaciado entre el texto y la imagen */
+}
+
+.imagen-bienvenida {
+  flex: 1; /* La imagen ocupa la otra mitad */
+  text-align: right; /* Alinea la imagen a la derecha */
+}
+
+.imagen-bienvenida img {
+  max-width: 100%; /* Hace que la imagen sea responsiva */
+  height: auto; /* Mantiene la proporción */
+  border-radius: 10px; /* Esquinas redondeadas */
+}
+
+.descripcion-imagen {
+  flex: 0 0 50%;
+  padding: 0 20px;
+}
+
+.imagen-descripcion {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3); /* Sombra */
+}
+
+.imagen-descripcion-v2 {
+  width: 100%;
+  height: auto;
+  padding: 5px; /* Espaciado alrededor de la imagen */
+  border-radius: 15px; /* Bordes redondeados */
+  background: linear-gradient(135deg, #4CC3A8, #2A9278); /* Fondo degradado */
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1); /* Sombra */
+  }  
+
+/* Contenedor general para las decoraciones */
+#decoraciones {
+  position: fixed; /* Fija las decoraciones al fondo */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* Cubre toda la página */
+  z-index: -100; /* Asegura que estén detrás de todo el contenido */
+  pointer-events: none; /* Evita interacción con las decoraciones */
+  overflow: hidden;
+}
+
+/* Estilo general de las bolas */
+.bola {
+  position: absolute;
+  border-radius: 50%; /* Forma circular */
+  background: linear-gradient(145deg, rgba(76, 195, 168, 0.4), rgba(42, 146, 120, 0.4)); /* Efecto 3D translúcido */
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Sombra suave */
+  animation: mover 10s infinite ease-in-out; /* Movimiento */
+}
+
+/* Animación de las bolas */
+@keyframes mover {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(20px); /* Oscilación */
+  }
+}
+
+/* Posiciones de las bolas (Inicio) */
+.bola1 {
+  top: 5%;
+  left: 10%;
+  width: 150px;
+  height: 150px;
+}
+
+.bola2 {
+  top: 30%;
+  left: 70%;
+  width: 120px;
+  height: 120px;
+}
+
+.bola3 {
+  bottom: 15%;
+  left: 25%;
+  width: 200px;
+  height: 200px;
+}
+
+/* Posiciones de las bolas (Inferiores) */
+.bola4 {
+  bottom: 5%;
+  right: 10%;
+  width: 100px;
+  height: 100px;
+}
+
+.bola5 {
+  top: 50%;
+  right: 5%;
+  width: 180px;
+  height: 180px;
+}
+
+.bola6 {
+  bottom: 25%;
+  left: 15%;
+  width: 140px;
+  height: 140px;
+}
+
+.bola7 {
+  bottom: 10%;
+  right: 20%;
+  width: 160px;
+  height: 160px;
+}
+
+.planta-svg {
+  width: 100px;
+  height: auto;
+  animation: float 5s ease-in-out infinite; /* Animación de flotación */
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px); /* Movimiento flotante hacia arriba */
+  }
+}
+
+/* Sección de donaciones */
+.donaciones {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.btn-animacion {
+  background-color: #4CC3A8;
+  color: white;
+  font-size: 1.2em;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-animacion:hover {
+  background-color: #2A9278;
+}
+
+/* Sección "TE OFRECEMOS LO QUE NECESITAS" */
+.ofrecemos {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f8f9fa; /* Fondo claro */
+}
+
+.ofrecemos h2 {
+  font-family: HopsAndBarley, sans-serif; /* Cambia la fuente */
+  font-size: 3em; /* Tamaño del texto */
+  font-weight: bold; /* Negrita */
+  color: #4CC3A8; /* Color del texto */
+  text-transform: uppercase; /* Mayúsculas */
+  letter-spacing: 1.2px; /* Espaciado entre letras */
+  margin-bottom: 10px; /* Espaciado inferior */
+}
+
+
+.ofrecemos p {
+  font-size: 1.2em;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.ofrecemos-contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.ofrecemos-item {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  text-align: center;
+}
+
+.ofrecemos-img {
+  max-width: 100%; /* Asegura que la imagen no salga del contenedor */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra elegante */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animación suave */
+}
+
+.ofrecemos-item h3 {
+  font-size: 1.5em;
+  color: #4CC3A8;
+  margin-bottom: 10px;
+}
+
+.ofrecemos-item p {
+  font-size: 1em;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* Efecto hover en las imágenes */
+.ofrecemos-item:hover .ofrecemos-img {
+  transform: scale(1.1); /* Agranda ligeramente la imagen */
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3); /* Aumenta la sombra */
+}
+
+/* Contenedor principal para la sección de Donaciones */
+.donaciones-apartado {
+  display: flex; /* Flexbox para organizar en fila */
+  font-family: 'HopsAndBarley', sans-serif; /* Cambia la fuente */
+  justify-content: center; /* Centra el contenido horizontalmente */
+  align-items: center; /* Alinea verticalmente */
+  padding: 50px 20px;
+  gap: 40px; /* Espaciado entre la imagen y el texto */
+  background-color: #f8f9fa; /* Fondo claro */
+  min-height: 100vh; /* Ocupa toda la pantalla */
+}
+
+/* Imagen QR a la izquierda */
+.donaciones-imagen {
+  flex: 1; /* Ocupa menos espacio */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagen-donaciones {
+  max-width: 450px; /* Tamaño máximo */
+  width: 500%; /* Imagen responsiva */
+  border-radius: 10px; /* Bordes redondeados */
+  border: 5px solid #4CC3A8; /* Borde verde */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+/* Texto a la derecha */
+.donaciones-descripcion {
+  flex: 1.5; /* Da más espacio al texto */
+  text-align: left; /* Alinea el texto a la izquierda */
+  font-family: 'HopsAndBarley,' sans-serif; /* Cambia la fuente */
+}
+
+/* Título "Apoya nuestra causa" */
+.donaciones-descripcion h1 {
+  font-family: 'HopsAndBarley,' sans-serif; /* Fuente de Google Fonts */
+  font-size: 2.5em;
+  font-weight: 600; /* Negrita */
+  color: #4CC3A8; /* Verde */
+  margin-bottom: 20px;
+}
+
+/* Descripción debajo del título */
+.donaciones-descripcion p {
+  font-family: 'HopsAndBarley,' sans-serif; /* Fuente de Google Fonts */
+  font-size: 1.2em;
+  line-height: 1.6;
+  color: #555; /* Gris oscuro */
+}
+
+
+.donaciones-descripcion p {
+  font-size: 1.2em; /* Texto más grande */
+  line-height: 1.6; /* Espaciado entre líneas */
+  font-family: 'HopsAndBarley', sans-serif; /* Cambia la fuente */
+  color: #555; /* Color gris oscuro */
+  margin-bottom: 15px;
+}
+
+/* Contenedor de información de contacto */
+#contact-info {
+  margin-top: 20px; /* Espaciado con el contenido anterior */
+  padding: 20px 0;
+  text-align: center; /* Centra el texto y el icono */
+  background-color: #f8f9fa; /* Fondo claro */
+  font-size: 1.2em; /* Tamaño del texto */
+  border-top: 1px solid #ddd; /* Línea sutil en la parte superior */
+}
+
+/* Contenedor principal */
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px; /* Espaciado entre el texto y el icono */
+}
+
+/* Estilo del texto del correo */
+.contact-container p {
+  font-family: 'HopsAndBarley', sans-serif; /* Nueva fuente */
+  font-weight: 600; /* Peso más grueso */
+  font-size: 1.3m; /* Tamaño más grande */
+  margin: 0;
+  color: #333; /* Color más oscuro para destacar */
+}
+
+/* Icono de WhatsApp */
+.whatsapp-icon {
+  width: 40px;
+  height: 30px;
+  transition: transform 0.3s ease-in-out; /* Efecto de hover suave */
+}
+
+.whatsapp-icon:hover {
+  transform: scale(1.2); /* Incrementa ligeramente el tamaño al pasar el cursor */
+}
+
+/* Ocultar inicialmente */
+.hidden {
+  display: none;
+  opacity: 0;
+}
+
+/* Sección de animaciones con la animación aplicada */
+.donaciones-apartado.animaciones-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  opacity: 1;
+  transform: translateY(0);
+  animation: fadeIn 1s ease-in-out; /* Animación suave */
+}
+
+/* Imagen de donaciones */
+.imagen-donaciones {
+  max-width: 50%;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+/* Texto a la derecha */
+.donaciones-descripcion {
+  flex: 1;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+/* Título */
+.animacion-titulo {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #4CC3A8;
+  margin-bottom: 15px;
+}
+
+/* Descripción */
+.animacion-descripcion {
+  font-size: 1.2em;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Animación */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px); /* Aparece desde abajo */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* En su lugar final */
+  }
+}
+

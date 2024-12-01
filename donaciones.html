@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donaciones - GreenWatch</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Reutilizamos el CSS existente -->
+  <head>
+    <style>
+      /* Declarar la fuente personalizada */
+      @font-face {
+        font-family: 'HopsAndBarley';
+        src: url('HopsAndBarley.woff2') format('woff2'), /* Formato optimizado */
+             url('HopsAndBarley.woff') format('woff');  /* Respaldo */
+        font-display: swap; /* Permite usar fuentes del sistema mientras carga */
+      }
+  
+      /* Aplicar la fuente al título "Apoya nuestra causa" */
+      .donaciones-descripcion h1 {
+        font-family: 'HopsAndBarley', sans-serif; /* Aplicar la fuente personalizada */
+        font-size: 2.5em; /* Tamaño grande */
+        font-weight: bold; /* Peso de la fuente */
+        color: #4CC3A8; /* Mantener el color verde */
+        margin-bottom: 20px;
+      }
+  
+      /* Aplicar la fuente a la descripción */
+      .donaciones-descripcion p {
+        font-family: 'HopsAndBarley', sans-serif; /* Fuente personalizada */
+        font-size: 1.2em; /* Tamaño moderado */
+        line-height: 1.6; /* Espaciado entre líneas */
+        color: #555; /* Color gris oscuro */
+      }
+    </style>
+  </head>
+  
+<body>
+  <!-- Cabecera con navegación -->
+  <header id="main-header">
+    <div class="logo">
+      <a href="index.html">
+        <img src="gw.png" alt="Logo GreenWatch" class="logo-img">
+      </a>
+    </div>
+    <nav class="menu">
+      <ul>
+        <li><a href="index.html">INICIO</a></li>
+        <li><a href="donaciones.html" class="active">DONACIONES</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="donaciones-main">
+    <section class="donaciones-apartado" id="animaciones">
+      <!-- Imagen QR de Yape (a la izquierda) -->
+      <div class="donaciones-imagen">
+        <img src="yapin.png" alt="Paga aquí con Yape" class="imagen-donaciones">
+      </div>
+      <!-- Texto a la derecha -->
+      <div class="donaciones-descripcion">
+        <h1 class="animacion-titulo">Apoya nuestra causa</h1>
+        <p class="animacion-descripcion">
+          Con tu ayuda, GreenWatch puede seguir promoviendo el reciclaje y la sostenibilidad.
+          Tus donaciones nos ayudan a crear más puntos de reciclaje, ofrecer talleres educativos
+          y entregar macetas ecológicas a cambio de materiales reciclables.
+        </p>
+        <p>
+          Puedes donar a través de nuestro QR de Yape o ponerte en contacto con nosotros para
+          contribuir directamente a nuestras iniciativas ambientales.
+        </p>
+      </div>
+    </section>
+  </main>
+  
+  <script>
+    // Aplica una animación al cargar el contenido de la página
+    document.addEventListener('DOMContentLoaded', () => {
+      const animacionesSection = document.getElementById('animaciones');
+      if (animacionesSection) {
+        animacionesSection.classList.add('animaciones-content');
+      }
+    });
+  </script>
+  
+
+
+
+  <section id="contact-info">
+    <div class="contact-container">
+      <p>Nuestro correo: <strong>xxxxdmargsum@gmail.com</strong></p>
+      <a href="https://wa.me/936533678" target="_blank">
+        <img src="whs.svg" alt="WhatsApp" class="whatsapp-icon">
+      </a>
+    </div>
+    <!-- Decoraciones -->
+    <div class="decorations">
+      <div class="circle circle1"></div>
+      <div class="circle circle2"></div>
+    </div>
+  </section>  
+</body>
+</html>
